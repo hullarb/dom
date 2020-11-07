@@ -129,6 +129,7 @@ func Dial(addr string) (net.Conn, error) {
 	if err != nil {
 		return nil, err
 	}
+
 	return &wsConn{c: conn}, nil
 }
 

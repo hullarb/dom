@@ -40,10 +40,10 @@ func funcOf(fnc func(this Ref, refs []Ref) interface{}) Func {
 	return js.FuncOf(fnc)
 }
 
-func typedArrayOf(slice interface{}) Ref {
-	return js.TypedArrayOf(slice).Value
-}
+// func typedArrayOf(slice interface{}) Ref {
+// 	return js.TypedArrayOf(slice).Value
+// }
 
-func releaseTypedArray(v Ref) {
-	js.TypedArray{v}.Release()
-}
+// func releaseTypedArray(v Ref) {
+// 	js.TypedArray{v}.Release()
+// }

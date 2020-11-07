@@ -78,7 +78,7 @@ func (v Value) Promised() *Promise {
 		if len(v) != 0 {
 			e = v[0]
 		}
-		if e.Ref == undefined {
+		if e.Ref.IsUndefined() {
 			e = NewObject()
 		}
 		p.err = NewError(e)

@@ -120,7 +120,7 @@ type Value struct {
 }
 
 func (v Value) isZero() bool {
-	return v == (Value{})
+	return v.Equal(Value{}.Ref)
 }
 
 // JSValue implements Wrapper interface.
@@ -138,12 +138,12 @@ func (v Value) String() string {
 
 // IsNull checks if a value represents JS null object.
 func (v Value) IsNull() bool {
-	return v.Ref == null
+	return v.IsNull()
 }
 
 // IsUndefined checks if a value represents JS undefined object.
 func (v Value) IsUndefined() bool {
-	return v.Ref == undefined
+	return v.IsUndefined()
 }
 
 // Valid checks if object is defined and not null.
