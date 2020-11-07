@@ -12,6 +12,8 @@ import (
 	"sync"
 	"time"
 
+	gjs "syscall/js"
+
 	"github.com/dennwc/dom/js"
 )
 
@@ -185,30 +187,28 @@ func (c *jsConn) loop() {
 				sz := arr.Get("length").Int()
 
 				data := make([]byte, sz)
-				m := js.MMap(data)
-				err := m.CopyFrom(arr)
-				m.Release()
+				gjs.CopyBytesToGo(data, arr.Ref)
+				c.rbuf.Write(data)
 
-				c.mu.Lock()
-				if err == nil {
-					c.rbuf.Write(data)
-				} else {
-					c.err = err
-				}
-				c.mu.Unlock()
+				// c.mu.Lock()
+				// if err == nil {
+				// 	c.rbuf.Write(data)
+				// } else {
+				// 	c.err = err
+				// }
+				// c.mu.Unlock()
 				c.wakeRead()
-				if err != nil {
-					return
-				}
+				// if err != nil {
+				// 	return
+				// }
 			}
 		}
 	}
 }
 
 func cloneToJS(data []byte) js.Value {
-	arr := js.TypedArrayOf(data)
-	v := js.New("Uint8Array", arr)
-	arr.Release()
+	v := js.New("Uint8Array", len(data))
+	gjs.CopyBytesToJS(v.Ref, data)
 	return v
 }
 

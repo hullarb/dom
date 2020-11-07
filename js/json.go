@@ -21,7 +21,7 @@ var (
 
 func initJSON() {
 	jsonObj = global.Get("JSON")
-	if jsonObj == undefined {
+	if jsonObj.IsUndefined() {
 		return
 	}
 	jsonParse = jsonObj.Get("parse")
@@ -31,10 +31,10 @@ func initJSON() {
 // MarshalJSON encodes a value into JSON by using native JavaScript function (JSON.stringify).
 func (v Value) MarshalJSON() ([]byte, error) {
 	jsonOnce.Do(initJSON)
-	if jsonStringify == undefined {
+	if jsonStringify.IsUndefined() {
 		return nil, errors.New("json encoding is not supported")
 	}
-	if v.Ref == undefined {
+	if v.Ref.IsUndefined() {
 		return []byte("null"), nil
 	}
 	s := jsonStringify.Invoke(v.Ref).String()
@@ -44,7 +44,7 @@ func (v Value) MarshalJSON() ([]byte, error) {
 // UnmarshalJSON decodes a value from JSON by using native JavaScript functions (JSON.parse).
 func (v *Value) UnmarshalJSON(p []byte) (err error) {
 	jsonOnce.Do(initJSON)
-	if jsonParse == undefined {
+	if jsonParse.IsUndefined() {
 		return errors.New("json decoding is not supported")
 	}
 	defer func() {
