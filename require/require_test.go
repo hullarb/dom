@@ -3,11 +3,12 @@
 package require
 
 import (
-	"github.com/dennwc/dom/js/jstest"
 	"net/http"
 	"strings"
 	"testing"
 	"time"
+
+	"github.com/hullarb/dom/js/jstest"
 )
 
 var (

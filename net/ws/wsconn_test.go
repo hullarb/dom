@@ -3,11 +3,12 @@
 package ws
 
 import (
-	"github.com/dennwc/dom/js/jstest"
-	"github.com/stretchr/testify/require"
 	"net/http"
 	"net/rpc"
 	"testing"
+
+	"github.com/hullarb/dom/js/jstest"
+	"github.com/stretchr/testify/require"
 )
 
 type service struct{}

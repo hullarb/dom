@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/dennwc/dom"
-	"github.com/dennwc/dom/js"
+	"github.com/hullarb/dom"
+	"github.com/hullarb/dom/js"
 )
 
 // NewElement creates a new SVG element.

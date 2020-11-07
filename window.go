@@ -3,7 +3,7 @@ package dom
 import (
 	"strings"
 
-	"github.com/dennwc/dom/js"
+	"github.com/hullarb/dom/js"
 )
 
 func GetWindow() *Window {

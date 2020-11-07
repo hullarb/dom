@@ -1,6 +1,6 @@
 package dom
 
-import "github.com/dennwc/dom/js"
+import "github.com/hullarb/dom/js"
 
 type Style struct {
 	v js.Value

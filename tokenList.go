@@ -1,6 +1,6 @@
 package dom
 
-import "github.com/dennwc/dom/js"
+import "github.com/hullarb/dom/js"
 
 func AsTokenList(v js.Value) *TokenList {
 	if !v.Valid() {

@@ -12,8 +12,8 @@ github.com/containerd/continuity v0.0.0-20181027224239-bea7585dbfac h1:PThQaO4yC
 github.com/containerd/continuity v0.0.0-20181027224239-bea7585dbfac/go.mod h1:GL3xCUCBDV3CZiTSEKksMWbLE66hEyuu9qyDOOqM47Y=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/dennwc/dom v0.2.1 h1:ADY36S5pLkfm+2l6mWj5XHtt/InVXZROijUG36+lMuY=
-github.com/dennwc/dom v0.2.1/go.mod h1:oFVwHbm2UiC3fpTHdNYk78qvsuvdJFnPWSBonoYGdYs=
+github.com/hullarb/dom v0.2.1 h1:ADY36S5pLkfm+2l6mWj5XHtt/InVXZROijUG36+lMuY=
+github.com/hullarb/dom v0.2.1/go.mod h1:oFVwHbm2UiC3fpTHdNYk78qvsuvdJFnPWSBonoYGdYs=
 github.com/dennwc/testproxy v1.0.1 h1:mQhNVWHPolTYjJrDZYKcugIplWRSlFAis6k/Zf1s0c0=
 github.com/dennwc/testproxy v1.0.1/go.mod h1:EHGV9tzWhMPLmEoVJ2KGyC149XqwKZwBDViCjhKD5d8=
 github.com/docker/go-connections v0.4.0 h1:El9xVISelRB7BuFusrZozjnkIM5YnzCViNKohAFqRJQ=

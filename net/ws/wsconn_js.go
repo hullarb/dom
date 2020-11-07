@@ -14,7 +14,7 @@ import (
 
 	gjs "syscall/js"
 
-	"github.com/dennwc/dom/js"
+	"github.com/hullarb/dom/js"
 )
 
 var errClosed = errors.New("ws: connection closed")

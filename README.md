@@ -28,14 +28,14 @@ More information about Go's WebAssembly support can be found on [Go's WebAssembl
 Pull the library and install `wasm-server` (optional):
 
 ```
-go get -u github.com/dennwc/dom
-go install github.com/dennwc/dom/cmd/wasm-server
+go get -u github.com/hullarb/dom
+go install github.com/hullarb/dom/cmd/wasm-server
 ```
 
 Run an example app:
 
 ```
-cd $GOPATH/src/github.com/dennwc/dom
+cd $GOPATH/src/github.com/hullarb/dom
 wasm-server
 ```
 

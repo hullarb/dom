@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/dennwc/dom/js"
+	"github.com/hullarb/dom/js"
 )
 
 type peerChannel struct {

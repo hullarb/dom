@@ -15,7 +15,7 @@ import (
 	"github.com/ory/dockertest"
 	"github.com/ory/dockertest/docker"
 
-	"github.com/dennwc/dom/internal/goenv"
+	"github.com/hullarb/dom/internal/goenv"
 	"github.com/stretchr/testify/require"
 )
 

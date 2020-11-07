@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/dennwc/dom/js"
+	"github.com/hullarb/dom/js"
 )
 
 // NewApp returns a application instance with a name, as specified in the extension manifest.

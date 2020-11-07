@@ -3,7 +3,7 @@ package dom
 import (
 	"fmt"
 
-	"github.com/dennwc/dom/js"
+	"github.com/hullarb/dom/js"
 )
 
 var _ Node = (*Element)(nil)

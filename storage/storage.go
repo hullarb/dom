@@ -1,7 +1,7 @@
 package storage
 
 import (
-	"github.com/dennwc/dom/js"
+	"github.com/hullarb/dom/js"
 )
 
 func getStorage(name string) Storage {

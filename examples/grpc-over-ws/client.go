@@ -9,9 +9,9 @@ import (
 
 	"google.golang.org/grpc"
 
-	"github.com/dennwc/dom"
-	"github.com/dennwc/dom/examples/grpc-over-ws/protocol"
-	"github.com/dennwc/dom/net/ws"
+	"github.com/hullarb/dom"
+	"github.com/hullarb/dom/examples/grpc-over-ws/protocol"
+	"github.com/hullarb/dom/net/ws"
 )
 
 func dialer(s string, dt time.Duration) (net.Conn, error) {

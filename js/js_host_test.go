@@ -5,7 +5,7 @@ package js
 import (
 	"testing"
 
-	"github.com/dennwc/dom/js/jstest"
+	"github.com/hullarb/dom/js/jstest"
 )
 
 func TestJS(t *testing.T) {

@@ -3,14 +3,15 @@
 package jstest
 
 import (
-	"github.com/stretchr/testify/require"
 	"io"
 	"io/ioutil"
 	"os"
 	"os/exec"
 	"testing"
 
-	"github.com/dennwc/dom/internal/goenv"
+	"github.com/stretchr/testify/require"
+
+	"github.com/hullarb/dom/internal/goenv"
 )
 
 const (
